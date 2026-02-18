@@ -11,17 +11,38 @@
 </head>
 <body>
     <!-- Sticky Navigation Bar -->
-    <nav class="navbar sticky-nav">
-        <div class="logo">Keyshoendi</div>
+    <nav class="navbar sticky-nav modern-nav">
+        <div class="logo-area">
+            <!-- Simple logo before the name -->
+            <img src="https://img.icons8.com/ios-filled/40/1e90ff/shoe-print.png" alt="Keyshoendi Logo" class="logo-icon"/>
+            <span class="logo-text">Keyshoendi</span>
+        </div>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+            <li><a href="cart.html" class="cart-link"><span class="cart-icon"></span>Cart <span id="cart-count">0</span></a></li>
         </ul>
     </nav>
+    <script>
+    // Hamburger menu toggle for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      navToggle.addEventListener('click', function() {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', !expanded);
+        navLinks.classList.toggle('open');
+      });
+    });
+    </script>
 
     <!-- Parallax Hero Section -->
     <section class="hero-parallax">

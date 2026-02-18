@@ -1,3 +1,134 @@
+/* Modern Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(30,144,255,0.85);
+  color: var(--light);
+  padding: 0.7rem 2.5rem;
+  border-radius: 1.5em;
+  margin: 1.2rem auto 1.5rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 24px rgba(30,144,255,0.10);
+  backdrop-filter: blur(8px);
+  position: relative;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.modern-nav {
+  /* Extra modern nav tweaks */
+  border: 1.5px solid var(--secondary);
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  filter: drop-shadow(0 2px 8px rgba(33,193,151,0.10));
+}
+.logo-text {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(30,144,255,0.10);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  transition: right 0.3s;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5em 1.1em;
+  border-radius: 1.2em;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-links a:hover, .cart-link:hover {
+  color: var(--secondary);
+  background: rgba(33,193,151,0.10);
+}
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+.cart-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url('https://img.icons8.com/ios-filled/50/ffffff/shopping-cart.png') no-repeat center/contain;
+  margin-right: 0.2em;
+}
+#cart-count {
+  background: var(--secondary);
+  color: var(--light);
+  border-radius: 50%;
+  padding: 0.2em 0.6em;
+  font-size: 0.9em;
+  margin-left: 0.1em;
+}
+
+/* Hamburger menu for mobile */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1.2em;
+  z-index: 110;
+}
+.nav-toggle .bar {
+  width: 28px;
+  height: 3.5px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: row;
+    padding: 0.7rem 1rem;
+    max-width: 98vw;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 2.5rem;
+    background: rgba(30,144,255,0.97);
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5em 2em;
+    border-radius: 1.2em;
+    box-shadow: 0 4px 24px rgba(30,144,255,0.10);
+    min-width: 180px;
+    display: none;
+    z-index: 105;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+}
 /*
   Keyshoendi Main Stylesheet
   Modern blue/green palette, responsive, with comments
