@@ -1,0 +1,6 @@
+# wrangler.toml
+name = "keyshoendi"                  # MUST match your exact project name in dashboard (case-sensitive!)
+compatibility_date = "2026-02-18"     # Or use today's date
+
+[assets]
+directory = "."                      # Use root since index.html is at root and no build step
