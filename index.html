@@ -10,8 +10,8 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar sticky-nav">
         <div class="logo">Keyshoendi</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -23,17 +23,36 @@
         </ul>
     </nav>
 
-    <!-- Hero Slider -->
-    <section class="hero-slider" id="home-slider">
-        <!-- Slides will be injected by JS -->
+    <!-- Parallax Hero Section -->
+    <section class="hero-parallax">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">Elevate Your Style</h1>
+            <p class="hero-subtitle">Premium Men's Clothing & Shoes</p>
+            <a href="shop.html" class="cta-btn">Shop Now</a>
+        </div>
     </section>
 
-    <!-- Featured Products Slider -->
+    <!-- Featured Products Carousel -->
     <section class="featured-products">
         <h2>Featured Products</h2>
         <div class="slider" id="featured-slider">
             <!-- Slides will be injected by JS -->
         </div>
+    </section>
+
+    <!-- Trust Badges & Newsletter -->
+    <section class="trust-newsletter">
+        <div class="trust-badges">
+            <img src="https://img.icons8.com/ios-filled/50/1e90ff/lock--v1.png" alt="Secure Checkout" title="Secure Checkout">
+            <img src="https://img.icons8.com/ios-filled/50/1e90ff/return-purchase.png" alt="Free Returns" title="Free Returns">
+            <img src="https://img.icons8.com/ios-filled/50/1e90ff/delivery.png" alt="Fast Delivery" title="Fast Delivery">
+        </div>
+        <form class="newsletter-form fade-in" onsubmit="event.preventDefault();alert('Thank you for subscribing!');">
+            <label for="newsletter-email">Get exclusive offers:</label>
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
     </section>
 
     <!-- Footer -->
