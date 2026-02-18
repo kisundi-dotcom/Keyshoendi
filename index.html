@@ -10,10 +10,13 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span>Free shipping on orders over $100 &bull; New arrivals just dropped!</span>
+    </div>
     <!-- Sticky Navigation Bar -->
     <nav class="navbar sticky-nav modern-nav">
         <div class="logo-area">
-            <!-- Simple logo before the name -->
             <img src="https://img.icons8.com/ios-filled/40/1e90ff/shoe-print.png" alt="Keyshoendi Logo" class="logo-icon"/>
             <span class="logo-text">Keyshoendi</span>
         </div>
@@ -46,33 +49,47 @@
 
     <!-- Parallax Hero Section -->
     <section class="hero-parallax">
-        <!-- Hero image: Modern man in blue suit, urban background -->
         <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1600&q=80');"></div>
-        <div class="hero-content fade-in">
-            <h1 class="hero-title">Elevate Your Style</h1>
-            <p class="hero-subtitle">Premium Men's Clothing & Shoes</p>
-            <p class="hero-desc">Image: A confident man in a modern blue suit, standing in an urban cityscape. This image represents the bold, contemporary style of Keyshoendi's collection.</p>
-            <a href="shop.html" class="cta-btn">Shop Now</a>
+        <div class="hero-content-grid fade-in">
+            <div class="hero-main">
+                <h1 class="hero-title">Elevate Your Style</h1>
+                <p class="hero-subtitle">Premium Men's Clothing & Shoes</p>
+                <a href="shop.html" class="cta-btn">Shop Now</a>
+            </div>
+            <div class="hero-side">
+                <div class="hero-desc-card">
+                    <h3>About the Image</h3>
+                    <p>A confident man in a modern blue suit, standing in an urban cityscape. This image represents the bold, contemporary style of Keyshoendi's collection.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Featured Products Carousel -->
-    <section class="featured-products">
-        <h2>Featured Products</h2>
+    <section class="featured-products modern-section">
+        <h2 class="section-title">Featured Products</h2>
         <div class="slider" id="featured-slider">
             <!-- Slides will be injected by JS -->
-            <!-- Example featured product images with real descriptions -->
             <div class="slide active">
                 <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Brown leather dress shoes on a wooden floor. Classic, elegant men's footwear." />
-                <div class="slide-caption">Brown Leather Dress Shoes<br><span class="slide-desc">Classic, elegant men's footwear for formal occasions. Image: Brown leather shoes on a wooden floor, highlighting craftsmanship and style.</span></div>
+                <div class="slide-caption">
+                    <strong>Brown Leather Dress Shoes</strong>
+                    <span class="slide-desc">Classic, elegant men's footwear for formal occasions. Image: Brown leather shoes on a wooden floor, highlighting craftsmanship and style.</span>
+                </div>
             </div>
             <div class="slide">
                 <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" alt="Man in a green shirt and khaki pants, sitting on a bench outdoors. Relaxed, casual fashion." />
-                <div class="slide-caption">Green Shirt & Khaki Pants<br><span class="slide-desc">Relaxed, casual fashion for everyday wear. Image: Man in a green shirt and khaki pants, sitting on a bench outdoors.</span></div>
+                <div class="slide-caption">
+                    <strong>Green Shirt & Khaki Pants</strong>
+                    <span class="slide-desc">Relaxed, casual fashion for everyday wear. Image: Man in a green shirt and khaki pants, sitting on a bench outdoors.</span>
+                </div>
             </div>
             <div class="slide">
                 <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Close-up of white sneakers on a city street. Modern, versatile men's shoes." />
-                <div class="slide-caption">White Sneakers<br><span class="slide-desc">Modern, versatile men's shoes for any outfit. Image: Close-up of white sneakers on a city street, perfect for urban style.</span></div>
+                <div class="slide-caption">
+                    <strong>White Sneakers</strong>
+                    <span class="slide-desc">Modern, versatile men's shoes for any outfit. Image: Close-up of white sneakers on a city street, perfect for urban style.</span>
+                </div>
             </div>
         </div>
     </section>

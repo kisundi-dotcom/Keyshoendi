@@ -1,3 +1,66 @@
+/* Announcement Bar */
+.announcement-bar {
+  width: 100vw;
+  background: linear-gradient(90deg, var(--primary) 60%, var(--secondary) 100%);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  padding: 0.5em 0;
+  box-shadow: 0 2px 8px rgba(30,144,255,0.07);
+  position: relative;
+  z-index: 120;
+}
+
+/* Hero Content Grid */
+.hero-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.hero-main {
+  text-align: left;
+}
+.hero-side {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-desc-card {
+  background: rgba(255,255,255,0.13);
+  color: #fff;
+  border-radius: 1em;
+  box-shadow: 0 2px 12px rgba(30,144,255,0.10);
+  padding: 1.2em 1.5em;
+  max-width: 320px;
+  font-size: 1.05rem;
+  border: 1.5px solid var(--secondary);
+}
+
+/* Section Headings & Cards */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.modern-section {
+  background: #fafdff;
+  border-radius: 1.5em;
+  box-shadow: 0 2px 16px rgba(30,144,255,0.06);
+  padding: 2.5em 1.5em 2em 1.5em;
+  margin: 2.5em auto 2em auto;
+  max-width: 1200px;
+}
 /* Modern Navigation Bar */
 .navbar {
   display: flex;
