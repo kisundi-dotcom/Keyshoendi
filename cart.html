@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyshoendi - Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Keyshoendi</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+
+    <section class="cart-section">
+        <h1>Your Cart</h1>
+        <div id="cart-items">
+            <!-- Cart items will be injected by JS -->
+        </div>
+        <div class="cart-total">
+            Total: $<span id="cart-total">0.00</span>
+        </div>
+        <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Keyshoendi. All rights reserved.</p>
+    </footer>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

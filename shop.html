@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyshoendi - Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Keyshoendi</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Shop Slider -->
+    <section class="shop-slider" id="shop-slider">
+        <!-- Slides will be injected by JS -->
+    </section>
+
+    <!-- Product Filters -->
+    <section class="filters">
+        <h2>Filter Products</h2>
+        <form id="filter-form">
+            <select id="filter-category">
+                <option value="all">All Categories</option>
+                <option value="clothing">Clothing</option>
+                <option value="shoes">Shoes</option>
+            </select>
+            <select id="filter-size">
+                <option value="all">All Sizes</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+            </select>
+            <select id="filter-price">
+                <option value="all">All Prices</option>
+                <option value="0-50">$0 - $50</option>
+                <option value="51-100">$51 - $100</option>
+                <option value="101-200">$101 - $200</option>
+            </select>
+            <button type="submit">Apply</button>
+        </form>
+    </section>
+
+    <!-- Product List -->
+    <section class="product-list" id="product-list">
+        <!-- Products will be injected by JS -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Keyshoendi. All rights reserved.</p>
+    </footer>
+
+    <script src="js/shop.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
